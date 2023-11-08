@@ -1,0 +1,41 @@
+<div
+  class="container d-flex flex-column justify-content-center align-items-center"
+  id="home"
+>
+  <div class="input-group input-group-lg rounded-pill" id="url-div">
+    <input
+      type="url"
+      class="form-control rounded-start-pill px-4"
+      id="url-input"
+      placeholder="Enter YouTube URL here..."
+      [(ngModel)]="inputData"
+    />
+    <span
+      class="input-group-text rounded-end-pill btn px-3"
+      (click)="showDescription()"
+      ><i class="bi bi-arrow-right-circle"></i
+    ></span>
+  </div>
+
+  <div class="description container m-5 w-75" *ngIf="clicked">
+    <div class="full-div d-flex flex-column p-5">
+      <div class="title text-center">
+        <p class="fs-3 fw-bold">DESCRIPTION</p>
+      </div>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ab
+        voluptates est, nulla fuga culpa, unde excepturi a nisi, esse mollitia
+        natus maiores adipisci laudantium ipsam. Magni, ipsum voluptate? Maxime!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ab
+        voluptates est, nulla fuga culpa, unde excepturi a nisi, esse mollitia
+        natus maiores adipisci laudantium ipsam. Magni, ipsum voluptate? Maxime!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ab
+        voluptates est, nulla fuga culpa, unde excepturi a nisi, esse mollitia
+        natus maiores adipisci laudantium ipsam. Magni, ipsum voluptate? Maxime!    
+      </div>
+      <div class="url-visit mt-4">
+        Visit: <a href="{{url}}">{{url}}</a>
+      </div>
+    </div>
+  </div>
+</div>

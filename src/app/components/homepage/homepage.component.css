@@ -1,0 +1,21 @@
+#home{
+    margin-top: 200px;
+}
+
+#url-div{
+    width: 70%;
+    border: solid 1px rgba(91, 91, 91, 0.514);
+}
+
+#url-input{
+    font-size: medium;
+}
+
+.description{
+    border: solid rgba(91, 91, 91, 0.514) 4px;
+    border-radius: 20px;
+}
+
+.content{
+    text-align: justify;
+}
